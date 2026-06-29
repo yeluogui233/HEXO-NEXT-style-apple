@@ -232,14 +232,20 @@ NexT.utils = {
   },
 
   registerSidebarTOC: function() {
-    const navItems = document.querySelectorAll('.post-toc li');
-    const sections = [...navItems].map(element => {
-      var link = element.querySelector('a.nav-link');
-      var target = document.getElementById(decodeURI(link.getAttribute('href')).replace('#', ''));
-      // TOC item animation navigate.
-      link.addEventListener('click', event => {
+    const tocElement = document.querySelector('.post-toc-wrap');
+    const tocList = document.querySelector('.post-toc');
+    if (!tocElement || !tocList) return;
+
+    if (tocList.dataset.clickBound !== 'true') {
+      tocList.dataset.clickBound = 'true';
+      tocList.addEventListener('click', event => {
+        const link = event.target.closest('a.nav-link');
+        if (!link) return;
+        const targetId = decodeURI(link.getAttribute('href') || '').replace('#', '');
+        const target = document.getElementById(targetId);
+        if (!target) return;
         event.preventDefault();
-        var offset = target.getBoundingClientRect().top + window.scrollY;
+        const offset = target.getBoundingClientRect().top + window.scrollY;
         window.anime({
           targets  : document.scrollingElement,
           duration : 500,
@@ -247,10 +253,22 @@ NexT.utils = {
           scrollTop: offset + 10
         });
       });
-      return target;
-    });
+    }
 
-    var tocElement = document.querySelector('.post-toc-wrap');
+    if (window.__nexTTOCObserver) {
+      window.__nexTTOCObserver.disconnect();
+      window.__nexTTOCObserver = null;
+    }
+
+    const navItems = document.querySelectorAll('.post-toc li');
+    const sections = [...navItems].map(element => {
+      var link = element.querySelector('a.nav-link');
+      if (!link) return null;
+      return document.getElementById(decodeURI(link.getAttribute('href')).replace('#', ''));
+    }).filter(Boolean);
+
+    if (!sections.length) return;
+
     function activateNavByIndex(target) {
       if (target.classList.contains('active-current')) return;
 
@@ -307,6 +325,7 @@ NexT.utils = {
       sections.forEach(element => {
         element && intersectionObserver.observe(element);
       });
+      window.__nexTTOCObserver = intersectionObserver;
     }
     createIntersectionObserver(document.documentElement.scrollHeight);
   },
@@ -409,3 +428,10 @@ NexT.utils = {
     return intersectionObserver;
   }
 };
+
+window.addEventListener('hexo-blog-decrypt', () => {
+  if (window.NexT && NexT.utils) {
+    NexT.utils.registerSidebarTOC();
+    NexT.utils.updateSidebarPosition();
+  }
+});

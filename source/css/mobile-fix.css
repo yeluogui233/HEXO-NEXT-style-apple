@@ -385,3 +385,177 @@
     width: 44px !important;
   }
 }
+
+@media (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+
+  body .sidebar,
+  body .sidebar-inner,
+  body .site-overview-wrap,
+  body .site-author-widget,
+  body .sidebar-panel,
+  body .sidebar-toggle,
+  body #sidebar-dimmer,
+  body .post-toc-wrap,
+  body .back-to-top {
+    display: none !important;
+  }
+
+  body .header {
+    padding: 0 10px !important;
+  }
+
+  body .header-inner {
+    align-items: center !important;
+    border-radius: 22px !important;
+    flex-direction: row !important;
+    gap: 0 !important;
+    min-height: 0 !important;
+    padding: 10px 12px !important;
+    width: calc(100vw - 20px) !important;
+  }
+
+  body .site-brand-container,
+  body .site-subtitle,
+  body .site-nav-toggle,
+  body .site-nav-right {
+    display: none !important;
+  }
+
+  body .site-nav,
+  body .main-menu {
+    width: 100% !important;
+  }
+
+  body .main-menu {
+    align-items: center !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 6px !important;
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    padding: 2px 2px 4px !important;
+    scrollbar-width: none !important;
+  }
+
+  body .main-menu::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  body .main-menu > .menu-item {
+    flex: 0 0 auto !important;
+  }
+
+  body .main-menu > .menu-item > a,
+  body .main-menu > .menu-item > .popup-trigger {
+    min-height: 34px !important;
+    padding: 0 11px !important;
+    white-space: nowrap !important;
+  }
+
+  body .main,
+  body .main-inner,
+  body .content-wrap {
+    width: 100% !important;
+  }
+
+  body .main-inner {
+    display: block !important;
+  }
+
+  body .content-wrap {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body .content.index .post-block.post-card-preview,
+  body .content.index .post-block.post-card-preview:nth-of-type(even),
+  body.index .post-card-preview,
+  body.index .post-card-preview:nth-of-type(even) {
+    align-items: stretch !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0 !important;
+    min-height: 150px !important;
+    overflow: hidden !important;
+    width: 100% !important;
+  }
+
+  body .content.index .post-block.post-card-preview .post-card-cover,
+  body.index .post-card-preview .post-card-cover {
+    flex: 0 0 40% !important;
+    height: auto !important;
+    min-height: 150px !important;
+    width: 40% !important;
+  }
+
+  body .content.index .post-block.post-card-preview .post-card-cover img,
+  body.index .post-card-preview .post-card-cover img {
+    height: 100% !important;
+    object-fit: cover !important;
+    width: 100% !important;
+  }
+
+  body .content.index .post-block.post-card-preview .post-card-info {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    flex-direction: column !important;
+    min-width: 0 !important;
+    padding: 12px 12px 10px !important;
+  }
+
+  body .content.index .post-card-preview .post-header {
+    padding: 0 !important;
+  }
+
+  body .content.index .post-card-preview .post-title {
+    font-size: .98rem !important;
+    line-height: 1.28 !important;
+    margin: 0 0 6px !important;
+  }
+
+  body .content.index .post-card-preview .post-meta {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 2px 8px !important;
+    line-height: 1.35 !important;
+    margin: 0 0 6px !important;
+  }
+
+  body .content.index .post-card-preview .post-body {
+    color: #4e5b70 !important;
+    flex: 1 1 auto !important;
+    font-size: .84rem !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    max-height: none !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+  }
+
+  body .content.index .post-card-preview .post-body p {
+    display: -webkit-box !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 3 !important;
+  }
+
+  body .content.index .post-card-preview .post-body::after {
+    display: none !important;
+  }
+
+  body .content.index .post-card-preview .post-button {
+    margin-top: 8px !important;
+  }
+
+  body .content.index .post-card-preview .post-button .btn {
+    min-height: 30px !important;
+    min-width: 82px !important;
+    padding: 0 12px !important;
+  }
+}
