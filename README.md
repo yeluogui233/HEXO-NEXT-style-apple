@@ -1,7 +1,4 @@
-# HEXO-NEXT-style-apple
-=======
 # HEXO NexT Style Apple
->>>>>>> e86b415 (Fix TOC jump after unlock)
 
 这是一个基于 Hexo + NexT 深度定制的博客模板，整体偏向 Apple / Butterfly 风格，包含圆角卡片、顶部菜单、专属页面、搜索、密码文章前端验证、桌宠、博客管理器等功能。
 
