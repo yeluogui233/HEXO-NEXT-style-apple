@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ config.language }}">
 <head>
   <script src="https://cdn.jsdelivr.net/npm/cardlink"></script>
@@ -64,7 +64,7 @@
   {%- if theme.pjax %}
     </div>
   {%- endif %}
-<!-- 缃戞槗浜戞挱鏀惧櫒 -->
+<!-- 网易云播放器 -->
 <div id="netease-player">
   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0"
     width="330" height="86"
@@ -95,7 +95,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 <script src="{{ url_for('/js/touch-menu.js') }}?v=20260629-touch-1"></script>
 <script src="{{ url_for('/js/makima-pet.js') }}"></script>
 <script>
-// 涓烘枃绔犲唴瀹逛腑鐨勬墍鏈夊閮ㄩ摼鎺ョ敓鎴愬崱鐗?
+// 为文章内容中的所有外部链接生成卡�?
 document.addEventListener('DOMContentLoaded', function() {
   var postContent = document.querySelector('.post-body') || 
                     document.querySelector('.post-block') ||
@@ -110,4 +110,5 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
 
