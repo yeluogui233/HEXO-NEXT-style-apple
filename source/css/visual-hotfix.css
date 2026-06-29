@@ -1,0 +1,1111 @@
+﻿/* Loaded last on purpose: fixes the visible header/sidebar overrides. */
+html body .container .header {
+  background: transparent !important;
+  margin: 18px auto 24px !important;
+  padding: 0 !important;
+  position: relative !important;
+  z-index: 80 !important;
+}
+
+html body .container .header .header-inner {
+  align-items: center !important;
+  background: #fff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid rgba(217, 224, 235, .96) !important;
+  border-radius: 30px !important;
+  box-shadow: 0 18px 48px rgba(30, 42, 68, .12) !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 18px !important;
+  justify-content: space-between !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1760px !important;
+  min-height: 58px !important;
+  overflow: visible !important;
+  padding: 8px 14px 8px 22px !important;
+  position: relative !important;
+  width: min(1760px, calc(100vw - 56px)) !important;
+}
+
+html body .container .header .header-inner::before {
+  background: #fff !important;
+  border-radius: inherit !important;
+  content: "" !important;
+  inset: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  z-index: -1 !important;
+}
+
+html body .header-inner .site-brand-container,
+html body .header-inner .site-meta,
+html body .header-inner .brand {
+  align-items: center !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  display: flex !important;
+  flex: 0 1 auto !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+}
+
+html body .header-inner .site-title {
+  color: #202938 !important;
+  font-size: .95rem !important;
+  font-weight: 760 !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  max-width: 34vw !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+html body .header-inner .logo-line-before,
+html body .header-inner .logo-line-after,
+html body .header-inner .site-nav-toggle,
+html body .header-inner .site-nav-right {
+  display: none !important;
+}
+
+html body .header-inner .site-nav {
+  background: transparent !important;
+  display: flex !important;
+  flex: 1 1 auto !important;
+  justify-content: flex-end !important;
+  min-width: 0 !important;
+  overflow: visible !important;
+}
+
+html body .header-inner .main-menu {
+  align-items: center !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  display: inline-flex !important;
+  flex-wrap: nowrap !important;
+  gap: 2px !important;
+  justify-content: flex-end !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+  overflow: visible !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+}
+
+html body .header-inner .main-menu > .menu-item > a,
+html body .header-inner .main-menu > .menu-item > .popup-trigger {
+  align-items: center !important;
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+  color: #202938 !important;
+  display: inline-flex !important;
+  font-size: .9rem !important;
+  font-weight: 760 !important;
+  min-height: 38px !important;
+  padding: 0 12px !important;
+  transition: background-color .24s ease, color .24s ease, transform .24s ease !important;
+}
+
+html body .header-inner .main-menu > .menu-item > a:hover,
+html body .header-inner .main-menu > .menu-item > a:focus-visible,
+html body .header-inner .main-menu > .menu-item-active > a,
+html body .header-inner .main-menu > .menu-item > .popup-trigger:hover,
+html body .header-inner .main-menu > .menu-item > .popup-trigger:focus-visible {
+  background: #111 !important;
+  border-color: #111 !important;
+  color: #fff !important;
+  transform: translateY(-1px) !important;
+}
+
+html body .main-inner {
+  grid-template-columns: clamp(318px, 18vw, 348px) minmax(0, 1fr) !important;
+}
+
+html body .sidebar-profile-card {
+  padding: 16px 18px 18px !important;
+}
+
+html body .sidebar-profile-card .site-author-image {
+  height: 84px !important;
+  margin: 0 auto 8px !important;
+  width: 84px !important;
+}
+
+html body .sidebar-profile-card .site-description {
+  font-size: .9rem !important;
+  line-height: 1.6 !important;
+  margin-top: 4px !important;
+  max-width: 232px !important;
+}
+
+html body .sidebar-profile-card .site-state-wrap {
+  margin-top: 8px !important;
+  padding-top: 8px !important;
+}
+
+html body .sidebar-profile-card .links-of-author {
+  gap: 7px !important;
+  margin-top: 10px !important;
+  max-width: 268px !important;
+}
+
+html body .sidebar-profile-card .links-of-author-item a {
+  min-height: 34px !important;
+  padding: 0 8px !important;
+}
+
+html body .sidebar-popular-list {
+  counter-reset: popular !important;
+}
+
+html body .sidebar-popular-item a {
+  display: grid !important;
+  gap: 10px !important;
+  grid-template-columns: 28px minmax(0, 1fr) 54px !important;
+  min-height: 46px !important;
+}
+
+html body .sidebar-popular-item a::before {
+  align-items: center !important;
+  background: #edf5ff !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  color: #29415f !important;
+  content: counter(popular) !important;
+  counter-increment: popular !important;
+  display: inline-flex !important;
+  font-size: .82rem !important;
+  font-weight: 800 !important;
+  height: 28px !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  width: 28px !important;
+}
+
+html body .sidebar-popular-item a span,
+html body .sidebar-popular-item a time {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body .sidebar-popular-item a:hover,
+html body .sidebar-popular-item a:focus-visible {
+  background: #111 !important;
+  border-color: #111 !important;
+  color: #fff !important;
+}
+
+html body .sidebar-popular-item a:hover span,
+html body .sidebar-popular-item a:hover time,
+html body .sidebar-popular-item a:focus-visible span,
+html body .sidebar-popular-item a:focus-visible time {
+  color: #fff !important;
+}
+
+html body .sidebar-popular-item a:hover::before,
+html body .sidebar-popular-item a:focus-visible::before {
+  background: rgba(255, 255, 255, .94) !important;
+  color: #111 !important;
+}
+
+html body .sidebar-popular .sidebar-popular-list .sidebar-popular-item > a:hover > span,
+html body .sidebar-popular .sidebar-popular-list .sidebar-popular-item > a:focus-visible > span,
+html body .sidebar-popular .sidebar-popular-list .sidebar-popular-item > a:hover > time,
+html body .sidebar-popular .sidebar-popular-list .sidebar-popular-item > a:focus-visible > time {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: #fff !important;
+}
+
+html body .sidebar-popular .sidebar-popular-list .sidebar-popular-item > a:hover::before,
+html body .sidebar-popular .sidebar-popular-list .sidebar-popular-item > a:focus-visible::before {
+  background: rgba(255, 255, 255, .94) !important;
+  color: #111 !important;
+}
+
+html body .sidebar-inner .sidebar-nav {
+  background: #fff !important;
+  border: 1px solid rgba(217, 224, 235, .96) !important;
+  border-radius: 26px 26px 0 0 !important;
+  box-shadow: 0 18px 42px rgba(30, 42, 68, .10) !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  gap: 8px !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  padding: 14px 14px 10px !important;
+  width: 100% !important;
+}
+
+html body .sidebar-inner .sidebar-nav li {
+  align-items: center !important;
+  background: #fff !important;
+  border: 1px solid rgba(217, 224, 235, .9) !important;
+  border-radius: 999px !important;
+  box-sizing: border-box !important;
+  color: #202938 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  font-size: .88rem !important;
+  font-weight: 760 !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+  min-height: 36px !important;
+  padding: 0 12px !important;
+  width: 100% !important;
+}
+
+html body .sidebar-inner .sidebar-nav li.sidebar-nav-active,
+html body .sidebar-inner .sidebar-nav li:hover {
+  background: #111 !important;
+  border-color: #111 !important;
+  color: #fff !important;
+}
+
+html body .sidebar-inner .post-toc-wrap {
+  background: #fff !important;
+  border: 1px solid rgba(217, 224, 235, .96) !important;
+  border-radius: 0 0 26px 26px !important;
+  border-top: 0 !important;
+  box-shadow: 0 18px 42px rgba(30, 42, 68, .10) !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  margin: -18px 0 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+  padding: 12px 16px 16px !important;
+  position: static !important;
+  width: 100% !important;
+}
+
+html body .sidebar-inner .post-toc-wrap .post-toc {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  display: block !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  padding: 0 !important;
+}
+
+html body .sidebar-inner .post-toc-wrap .nav {
+  display: grid !important;
+  gap: 8px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body .sidebar-inner .post-toc-wrap .nav-item {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body .sidebar-inner .post-toc-wrap .nav-link {
+  align-items: flex-start !important;
+  background: #f8fafc !important;
+  border: 1px solid rgba(217, 224, 235, .84) !important;
+  border-radius: 14px !important;
+  box-sizing: border-box !important;
+  color: #202938 !important;
+  display: flex !important;
+  gap: 6px !important;
+  line-height: 1.45 !important;
+  max-width: 100% !important;
+  padding: 9px 11px !important;
+  text-decoration: none !important;
+  width: 100% !important;
+}
+
+html body .sidebar-inner .post-toc-wrap .nav-link:hover,
+html body .sidebar-inner .post-toc-wrap .nav-link:focus-visible {
+  background: #111 !important;
+  border-color: #111 !important;
+  color: #fff !important;
+}
+
+html body .sidebar-inner .post-toc-wrap .nav-link:hover *,
+html body .sidebar-inner .post-toc-wrap .nav-link:focus-visible * {
+  color: #fff !important;
+}
+
+html body .sidebar-inner .post-toc-wrap + .site-overview-wrap {
+  display: flex !important;
+  margin-top: 22px !important;
+}
+
+@media (max-width: 980px) {
+  html body .container .header .header-inner {
+    align-items: stretch !important;
+    border-radius: 24px !important;
+    flex-direction: column !important;
+    width: calc(100vw - 22px) !important;
+  }
+
+  html body .header-inner .site-title {
+    max-width: 100% !important;
+  }
+
+  html body .header-inner .main-menu {
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+  }
+}
+
+/* Books, movies and diary pages already sit inside the shared content card.
+   Keep the page shell as the only large rounded background. */
+html body .content:has(.books-container),
+html body .content:has(.movies-container),
+html body .content:has(.diary-wrapper) {
+  background: #fff !important;
+  border: 1px solid rgba(217, 224, 235, .96) !important;
+  border-radius: 30px !important;
+  box-shadow: 0 18px 46px rgba(30, 42, 68, .11) !important;
+  box-sizing: border-box !important;
+  padding: clamp(18px, 2.2vw, 28px) !important;
+  overflow: visible !important;
+}
+
+html body .content:has(.books-container) > style,
+html body .content:has(.movies-container) > style,
+html body .content:has(.diary-wrapper) > style {
+  display: none !important;
+}
+
+html body .books-container,
+html body .movies-container,
+html body .diary-wrapper {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  max-width: none !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+html body .books-wrapper,
+html body .movies-wrapper {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  margin: 0 auto !important;
+  max-width: none !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+html body .books-front,
+html body .books-friends,
+html body .movies-front,
+html body .movies-friends {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+html body .books-grid,
+html body .movies-grid,
+html body .diary-grid {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+html body .books-container .page-header,
+html body .movies-container .page-header,
+html body .diary-wrapper .page-header {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin: 0 0 clamp(20px, 2.5vw, 34px) !important;
+  padding: 0 !important;
+}
+
+html body .books-container .book-card,
+html body .movies-container .movie-card {
+  background: #fff !important;
+  border: 1px solid rgba(217, 224, 235, .92) !important;
+  box-shadow: 0 10px 26px rgba(30, 42, 68, .08) !important;
+}
+
+html body .books-container .book-card:hover,
+html body .movies-container .movie-card:hover {
+  box-shadow: 0 18px 38px rgba(30, 42, 68, .14) !important;
+}
+
+html body .books-container .book-buttons,
+html body .books-wrapper .book-buttons {
+  align-items: center !important;
+  display: grid !important;
+  gap: 8px !important;
+  grid-auto-columns: 58px !important;
+  grid-auto-flow: column !important;
+  justify-content: center !important;
+  padding: 9px 8px 13px !important;
+}
+
+html body .books-container .book-buttons .btn,
+html body .books-wrapper .book-buttons .btn {
+  align-items: center !important;
+  background: #fff !important;
+  border: 1px solid rgba(217, 224, 235, .95) !important;
+  border-radius: 999px !important;
+  box-shadow: 0 3px 10px rgba(30, 42, 68, .08) !important;
+  box-sizing: border-box !important;
+  color: #111 !important;
+  display: inline-flex !important;
+  flex: none !important;
+  font-size: .76rem !important;
+  font-weight: 760 !important;
+  height: 24px !important;
+  inline-size: 58px !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  max-inline-size: 58px !important;
+  max-width: 58px !important;
+  min-height: 24px !important;
+  min-inline-size: 58px !important;
+  min-width: 58px !important;
+  padding: 0 !important;
+  text-align: center !important;
+  transform: translateY(0) !important;
+  white-space: nowrap !important;
+  width: 58px !important;
+}
+
+html body .books-container .book-buttons .btn:hover,
+html body .books-wrapper .book-buttons .btn:hover,
+html body .books-container .book-buttons .btn:focus-visible,
+html body .books-wrapper .book-buttons .btn:focus-visible {
+  background: #111 !important;
+  border-color: #111 !important;
+  box-shadow: 0 8px 18px rgba(17, 17, 17, .18) !important;
+  color: #fff !important;
+  transform: translateY(-1px) !important;
+}
+
+html body .movies-container .movie-buttons,
+html body .movies-wrapper .movie-buttons {
+  align-items: center !important;
+  display: grid !important;
+  gap: 8px !important;
+  grid-auto-columns: 58px !important;
+  grid-auto-flow: column !important;
+  justify-content: center !important;
+  padding: 9px 8px 13px !important;
+}
+
+html body .movies-container .movie-buttons .btn,
+html body .movies-wrapper .movie-buttons .btn {
+  align-items: center !important;
+  background: #fff !important;
+  border: 1px solid rgba(217, 224, 235, .95) !important;
+  border-radius: 999px !important;
+  box-shadow: 0 3px 10px rgba(30, 42, 68, .08) !important;
+  box-sizing: border-box !important;
+  color: #111 !important;
+  display: inline-flex !important;
+  flex: none !important;
+  font-size: .74rem !important;
+  font-weight: 760 !important;
+  height: 24px !important;
+  inline-size: 58px !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  max-inline-size: 58px !important;
+  max-width: 58px !important;
+  min-height: 24px !important;
+  min-inline-size: 58px !important;
+  min-width: 58px !important;
+  padding: 0 !important;
+  text-align: center !important;
+  text-shadow: none !important;
+  transform: translateY(0) !important;
+  white-space: nowrap !important;
+  width: 58px !important;
+}
+
+html body .movies-container .movie-buttons .btn:hover,
+html body .movies-wrapper .movie-buttons .btn:hover,
+html body .movies-container .movie-buttons .btn:focus-visible,
+html body .movies-wrapper .movie-buttons .btn:focus-visible {
+  background: #111 !important;
+  border-color: #111 !important;
+  box-shadow: 0 8px 18px rgba(17, 17, 17, .18) !important;
+  color: #fff !important;
+  transform: translateY(-1px) !important;
+}
+
+html body .diary-wrapper .diary-content {
+  background: #fff !important;
+  border: 1px solid rgba(217, 224, 235, .92) !important;
+  box-shadow: 0 10px 26px rgba(30, 42, 68, .08) !important;
+}
+
+html body .diary-wrapper .diary-card:hover .diary-content {
+  box-shadow: 0 18px 38px rgba(30, 42, 68, .14) !important;
+}
+
+@media (max-width: 767px) {
+  html body .content:has(.books-container),
+  html body .content:has(.movies-container),
+  html body .content:has(.diary-wrapper) {
+    border-radius: 24px !important;
+    padding: 14px !important;
+  }
+
+  html body .books-wrapper,
+  html body .movies-wrapper,
+  html body .diary-wrapper {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Standard archive, tag, category and about pages: one large page card only. */
+html body .content.categories-page,
+html body .content.page.posts-expand,
+html body .content.archive,
+html body .content.category,
+html body .content.tag {
+  background: #fff !important;
+  border: 1px solid rgba(217, 224, 235, .96) !important;
+  border-radius: 30px !important;
+  box-shadow: 0 18px 46px rgba(30, 42, 68, .11) !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+  padding: clamp(18px, 2.2vw, 28px) !important;
+}
+
+html body .content.categories-page {
+  background: #fff !important;
+}
+
+html body .content.categories-page .categories-container {
+  background: transparent !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  min-height: auto !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+html body .content.categories-page .categories-header-wrapper {
+  margin: 0 0 24px !important;
+  max-width: none !important;
+}
+
+html body .content.categories-page .categories-header-glass {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+html body .content.categories-page .stats-cards {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  justify-content: stretch !important;
+  margin: 18px auto 0 !important;
+  max-width: 720px !important;
+  width: 100% !important;
+}
+
+html body .content.categories-page .stat-card {
+  background: #f8fafc !important;
+  border: 1px solid rgba(217, 224, 235, .9) !important;
+  border-radius: 16px !important;
+  box-shadow: none !important;
+  min-width: 0 !important;
+  width: 100% !important;
+}
+
+html body .content.categories-page .categories-grid {
+  margin: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+html body .content.categories-page .categories-container,
+html body .content.categories-page .categories-header-wrapper,
+html body .content.categories-page .categories-header-glass,
+html body .content.categories-page .categories-header,
+html body .content.page.posts-expand .post-block,
+html body .content.archive .post-block,
+html body .content.category .post-block,
+html body .content.tag .post-block,
+html body .content.tag .tag-cloud-section,
+html body .content.page.posts-expand .tag-cloud,
+html body .content.page.posts-expand .tag-cloud-tags,
+html body .content.tag .tag-cloud-tags {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+}
+
+html body .content.page.posts-expand .post-content,
+html body .content.page.posts-expand .post-body,
+html body .content.page.posts-expand .tag-cloud,
+html body .content.page.posts-expand .tag-cloud-section,
+html body .content.page.posts-expand .category-all-page,
+html body .content.page.posts-expand .category-all,
+html body .content.page.posts-expand .event-list,
+html body .content.page.posts-expand .album-wrapper,
+html body .content.page.posts-expand .categories-container,
+html body .content.page.posts-expand .categories-header-glass {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+}
+
+html body .content.page.posts-expand .post-content,
+html body .content.page.posts-expand .post-body {
+  padding: 0 !important;
+}
+
+html body .content.page.posts-expand .tag-cloud,
+html body .content.page.posts-expand .category-all-page,
+html body .content.page.posts-expand .event-list {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+html body .content.page.posts-expand .tag-cloud-tags {
+  padding: 0 !important;
+}
+
+html body .content.page.posts-expand .tag-cloud-section {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body .content.page.posts-expand .category-all-title,
+html body .content.page.posts-expand .tag-cloud-title {
+  margin: 0 0 12px !important;
+}
+
+html body .content.categories-page .categories-header-glass {
+  padding-top: 0 !important;
+}
+
+html body .content.categories-page .stats-cards {
+  background: transparent !important;
+  box-shadow: none !important;
+  margin-bottom: clamp(18px, 2.2vw, 28px) !important;
+}
+
+html body .content.categories-page .stat-card {
+  background: #f8fafc !important;
+  border: 1px solid rgba(217, 224, 235, .9) !important;
+  border-radius: 18px !important;
+  box-shadow: none !important;
+}
+
+html body .content.categories-page .category-card-glass {
+  background: #fff !important;
+  border: 1px solid rgba(217, 224, 235, .92) !important;
+  box-shadow: 0 10px 26px rgba(30, 42, 68, .08) !important;
+}
+
+html body .content.categories-page .category-card-wrapper,
+html body .content.categories-page .category-card-content,
+html body .content.categories-page .category-card-image-section {
+  background: transparent !important;
+}
+
+html body .content.archive .collection-title,
+html body .content.archive .collection-year,
+html body .content.category .collection-title,
+html body .content.category .collection-year,
+html body .content.tag .collection-title,
+html body .content.tag .collection-year {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body .content.archive .posts-collapse,
+html body .content.archive .collection-title,
+html body .content.category .posts-collapse,
+html body .content.category .collection-title,
+html body .content.tag .posts-collapse,
+html body .content.tag .collection-title,
+html body .content.tag .tag-cloud-section {
+  background: transparent !important;
+  box-sizing: border-box !important;
+}
+
+html body .content.archive .posts-collapse,
+html body .content.category .posts-collapse,
+html body .content.tag .posts-collapse {
+  padding: 0 !important;
+}
+
+html body .content.archive .collection-title,
+html body .content.category .collection-title,
+html body .content.tag .collection-title {
+  margin: 0 0 18px !important;
+}
+
+html body .content.page.posts-expand .post-block > *,
+html body .content.archive .post-block > *,
+html body .content.category .post-block > *,
+html body .content.tag .post-block > * {
+  max-width: 100% !important;
+}
+
+html body .content.archive .post-block,
+html body .content.category .post-block,
+html body .content.tag .post-block,
+html body .content.page.posts-expand .post-block {
+  padding: 0 !important;
+}
+
+html body .album-wrapper {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  max-width: none !important;
+  padding: 0 !important;
+}
+
+html body .photo-frame {
+  background: #fff !important;
+  border: 1px solid rgba(217, 224, 235, .92) !important;
+  box-shadow: 0 10px 26px rgba(30, 42, 68, .08) !important;
+}
+
+html body .tag-cloud-section {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body .tag-cloud-link {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+@media (max-width: 767px) {
+  html body .content.categories-page,
+  html body .content.page.posts-expand,
+  html body .content.archive,
+  html body .content.category,
+  html body .content.tag {
+    border-radius: 24px !important;
+    padding: 14px !important;
+  }
+}
+/* Password gate card */
+html body .hbe.hbe-container,
+html body .password-gate.hbe-container {
+  background: #fff !important;
+  border: 1px solid rgba(217, 224, 235, .96) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 16px 40px rgba(30, 42, 68, .12) !important;
+  box-sizing: border-box !important;
+  color: #202938 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  margin: 20px auto !important;
+  max-width: min(520px, calc(100% - 24px)) !important;
+  overflow: hidden !important;
+  padding: 16px 18px 14px !important;
+}
+
+html body .hbe.hbe-content,
+html body .password-gate .hbe.hbe-content {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+html body .hbe.hbe-form,
+html body .password-gate .hbe.hbe-form {
+  align-items: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+html body .hbe.hbe-input,
+html body .hbe.hbe-input-default {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+html body .hbe.hbe-input-field,
+html body .hbe.hbe-input-field-default {
+  background: #f8fafc !important;
+  border: 1px solid rgba(217, 224, 235, .96) !important;
+  border-radius: 20px !important;
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, .03) !important;
+  box-sizing: border-box !important;
+  color: #202938 !important;
+  font-size: .95rem !important;
+  height: 48px !important;
+  line-height: 48px !important;
+  opacity: 1 !important;
+  padding: 0 16px !important;
+  width: 100% !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  width: 100% !important;
+}
+
+html body .hbe.hbe-input-field:focus,
+html body .hbe.hbe-input-field-default:focus {
+  background: #fff !important;
+  border-color: #111 !important;
+  box-shadow: 0 0 0 4px rgba(17, 17, 17, .08) !important;
+  outline: none !important;
+}
+
+html body .hbe.hbe-input-label,
+html body .hbe.hbe-input-label-default {
+  color: #7b8596 !important;
+  font-size: .82rem !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+html body .hbe.hbe-input-label-default::before,
+html body .hbe.hbe-input-label-default::after {
+  background: transparent !important;
+  content: none !important;
+  display: none !important;
+}
+
+html body .hbe.hbe-button {
+  align-items: center !important;
+  background: #111 !important;
+  border: 1px solid #111 !important;
+  border-radius: 999px !important;
+  box-shadow: 0 10px 22px rgba(17, 17, 17, .16) !important;
+  color: #fff !important;
+  display: inline-flex !important;
+  font-weight: 700 !important;
+  height: 40px !important;
+  justify-content: center !important;
+  min-height: 40px !important;
+  margin: 2px auto 0 !important;
+  padding: 0 18px !important;
+  transition: transform .22s ease, box-shadow .22s ease, background-color .22s ease !important;
+}
+
+html body .hbe.hbe-button:hover,
+html body .hbe.hbe-button:focus-visible {
+  background: #000 !important;
+  box-shadow: 0 14px 26px rgba(17, 17, 17, .22) !important;
+  transform: translateY(-1px) !important;
+}
+
+html body .hbe.hbe-error {
+  color: #b42318 !important;
+  font-size: .88rem !important;
+  margin-top: 2px !important;
+  min-height: 1.2em !important;
+  width: 100% !important;
+}
+
+html body .hbe.hbe-container #hbeForm,
+html body .password-gate #hbeForm {
+  width: 100% !important;
+}
+
+html body .hbe.hbe-input-field-default {
+  background: #fff !important;
+  color: #202938 !important;
+}
+
+html body .hbe.hbe-input-default .hbe-input-field-default {
+  box-shadow: none !important;
+}
+
+html body .hbe.hbe-input-default .hbe-input-label-default {
+  display: block !important;
+  float: none !important;
+  padding: 0 0 2px !important;
+  position: static !important;
+  text-align: left !important;
+  width: 100% !important;
+}
+
+html body .hbe.hbe-input-label-content-default {
+  color: #7b8596 !important;
+}
+
+html body .password-gate .password-gate-content {
+  display: none !important;
+}
+
+/* Index post previews: one fixed cover size, no alternating height. */
+html body .content.index .post-card-preview {
+  align-items: stretch !important;
+  display: grid !important;
+  gap: 0 !important;
+  grid-template-columns: minmax(320px, 34%) minmax(0, 1fr) !important;
+  min-height: 220px !important;
+}
+
+html body .content.index .post-card-preview .post-card-cover {
+  aspect-ratio: 16 / 10 !important;
+  display: block !important;
+  height: 100% !important;
+  min-height: 220px !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+html body .content.index .post-card-preview .post-card-cover img {
+  display: block !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  width: 100% !important;
+}
+
+html body .content.index .post-card-preview:nth-of-type(even),
+html body .content.index .post-card-preview {
+  grid-template-columns: minmax(320px, 34%) minmax(0, 1fr) !important;
+}
+
+html body #hbePass {
+  ime-mode: disabled !important;
+  text-transform: none !important;
+}
+
+html body .hbe.hbe-input-field,
+html body .hbe.hbe-input-field-default {
+  letter-spacing: 0 !important;
+}
+
+/* iPad/tablet books layout: keep every card inside the grid. */
+@media (min-width: 768px) and (max-width: 1180px) {
+  html body .books-container .books-wrapper,
+  html body .books-wrapper {
+    box-sizing: border-box !important;
+    padding: 22px 18px 18px !important;
+  }
+
+  html body .books-container .page-header,
+  html body .books-container .books-front .page-header,
+  html body .books-container .books-friends .page-header {
+    padding: 0 12px !important;
+  }
+
+  html body .books-container .books-grid,
+  html body .books-wrapper .books-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 16px 12px !important;
+  }
+
+  html body .books-container .book-card,
+  html body .books-wrapper .book-card {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  html body .books-container .book-cover,
+  html body .books-wrapper .book-cover {
+    aspect-ratio: 3 / 4 !important;
+  }
+
+  html body .books-container .book-title-overlay,
+  html body .books-wrapper .book-title-overlay {
+    font-size: .72rem !important;
+    padding: 5px 7px !important;
+  }
+
+  html body .books-container .book-buttons,
+  html body .books-wrapper .book-buttons {
+    gap: 6px !important;
+    grid-auto-columns: 54px !important;
+    padding: 8px 6px 12px !important;
+  }
+
+  html body .books-container .book-buttons .btn,
+  html body .books-wrapper .book-buttons .btn {
+    width: 54px !important;
+    min-width: 54px !important;
+    max-width: 54px !important;
+    font-size: .72rem !important;
+  }
+}
+
+/* Final index card override: lock every preview card to one shape. */
+html body .content.index .post-block.post-card-preview,
+html body .content.index .post-block.post-card-preview:nth-of-type(even) {
+  align-items: stretch !important;
+  display: grid !important;
+  gap: 0 !important;
+  grid-auto-flow: row !important;
+  grid-template-columns: minmax(340px, 36%) minmax(0, 1fr) !important;
+  min-height: 228px !important;
+  overflow: hidden !important;
+}
+
+html body .content.index .post-block.post-card-preview .post-card-cover {
+  aspect-ratio: 16 / 10 !important;
+  align-self: stretch !important;
+  display: block !important;
+  height: 100% !important;
+  min-height: 228px !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+html body .content.index .post-block.post-card-preview .post-card-cover img {
+  display: block !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  width: 100% !important;
+}
+
+html body .content.index .post-block.post-card-preview .post-card-info {
+  min-width: 0 !important;
+  padding: 22px 24px !important;
+}

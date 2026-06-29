@@ -1,0 +1,9 @@
+{
+  "id": "makima",
+  "displayName": "Makima",
+  "description": "A cold, elegant Makima-inspired Codex pet with red hair, a business shirt and tie, and hypnotic ringed golden eyes.",
+  "spritesheetPath": "spritesheet.webp",
+  "kind": "person",
+  "source": "codex-pets.net",
+  "sourceId": "makima-the-control-devil"
+}

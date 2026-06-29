@@ -1,0 +1,122 @@
+﻿# Hexo Configuration
+
+# Site
+title: My Blog
+subtitle: ''
+description: 'A clean Hexo blog template.'
+keywords:
+author: Your Name
+language: zh-CN
+timezone: Asia/Shanghai
+
+# URL
+url: http://example.com
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+search:
+  path: search.xml
+  field: all
+  content: true
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+meta_generator: true
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+per_page: 10
+pagination_dir: page
+include:
+exclude:
+ignore:
+
+theme: next
+
+robots:
+  useragent: '*'
+  disallow:
+sitemap:
+  path: sitemap.xml
+
+gallery:
+  enable: true
+  path: /gallery/
+  ignore_local: true
+
+live2d:
+  enable: false
+
+steam:
+  enable: false
+  steamId: ''
+  apiKey: ''
+  freeGames: true
+  path: 'steamgames/index.html'
+  title: 'Games'
+  quote: ''
+  tab: 'all'
+  length: 100
+
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+
+mathjax:
+  enable: true
+  only: false
+  tags: none
+
+deploy:
+  type:
+  repository:
+  branch:
