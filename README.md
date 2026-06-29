@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿# HEXO-NEXT-style-apple
+# HEXO-NEXT-style-apple
 =======
 # HEXO NexT Style Apple
 >>>>>>> e86b415 (Fix TOC jump after unlock)
@@ -57,67 +56,3 @@ node server.js
 ```
 
 管理器可以编辑文章、书籍、影视、画廊、分类、日记等数据。文章编辑页包含 `密码（留空则不加密）` 字段，留空就不会写入密码。
-
-## 使用说明
-
-完整说明见 [USAGE.md](USAGE.md)。
-
-## 自己上传到 GitHub
-
-1. 在 GitHub 新建一个空仓库，例如 `HEXO-NEXT-style-apple`。
-2. 打开本地终端，进入这个项目目录。
-3. 绑定远端仓库：
-
-```bash
-git remote add origin https://github.com/你的用户名/仓库名.git
-```
-
-<<<<<<< HEAD
-## 自己上传到 GitHub
-
-1. 在 GitHub 新建一个空仓库，例如 `HEXO-NEXT-style-apple`。
-2. 打开本地终端，进入这个项目目录。
-3. 绑定远端仓库：
-
-```bash
-git remote set-url origin https://github.com/你的用户名/仓库名.git
-```
-
-4. 如果远端仓库已经自带初始提交，先拉一次再推：
-
-```bash
-git pull origin main --rebase
-```
-
-=======
-4. 如果远端仓库已经自带初始提交，先拉一次再推：
-
-```bash
-git pull origin main --rebase
-```
-
->>>>>>> e86b415 (Fix TOC jump after unlock)
-5. 推送到 GitHub：
-
-```bash
-git push -u origin main
-```
-
-如果以后继续更新：
-
-```bash
-git add .
-git commit -m "update"
-git push
-```
-
-## 发布前检查
-
-- `_config.yml` 里的站点名、作者、链接、部署仓库改成你自己的
-- `themes/next/_config.yml` 里的菜单、评论、统计配置改成你自己的
-- `source/_posts/` 只保留你愿意公开的内容
-- 不要提交 `node_modules/`、`public/`、`.git/`、`.deploy_git/`、`db.json`
-
-## 许可证
-
-请根据自己的开源计划添加 `LICENSE` 文件，例如 MIT、Apache-2.0 或其他许可证。
