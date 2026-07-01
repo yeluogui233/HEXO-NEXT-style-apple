@@ -1,5 +1,5 @@
-﻿---
+---
 title: Games
 ---
 
-Configure your own Steam page before using this section.
+Configure your own game page before using this section.

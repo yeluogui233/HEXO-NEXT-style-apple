@@ -1,4 +1,4 @@
-﻿.DS_Store
+.DS_Store
 Thumbs.db
 *.log
 db.json
@@ -12,3 +12,6 @@ admin/backups/
 *.suo
 bin/
 obj/
+
+.private/
+source/_data/[0-9]*.json
